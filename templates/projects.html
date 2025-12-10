@@ -1,0 +1,83 @@
+{% extends 'skeleton.html' %}
+{% load static %}
+{% block contents %}
+<!--content-->
+        <div class="w-[90%] md:w-[65%] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 py-10">
+            <!--card 1:Sample portfolio-->
+            <div class="bg-[white] shadow-2xl space-y-2 py-4 px-4 rounded-2xl">
+                <img src="{% static '/assets/portfolio.png' %}" alt="Portfolio" class="object-cover w-full h-40 border border-gray-300 rounded-md" >
+                <p class="font-[Satoshi Regular] text-[18px] leading-[28px] text-black font-normal">Personal Portfolio - Responsive website (Django)</p>
+                <div class="flex flex-row justify-between">
+                    <a href='index' target="_blank">
+                        <button class="bg-green-600 rounded-lg text-[white] px-2 flex flex-row py-1  items-center gap-1 hover:bg-green-700" id="portfolio">
+                            Live Link
+                        </button>
+                    </a>
+                </div>
+            </div>
+            <!--card 2 :Static E-commerce-->
+            <div class="bg-[white] shadow-2xl space-y-2 py-4 px-4 rounded-2xl">
+                <img src="{% static '/assets/restarunt.png' %}" alt="Nill"  class="object-cover w-full h-40 border border-gray-300 rounded-md ">
+                <p class="font-[Satoshi Regular] text-[18px] leading-[28px] text-black font-normal">E-commerce Restaurant - Static website</p>
+                <div class="flex flex-row justify-between">
+                    <button class="bg-green-600 rounded-lg text-[white] px-2 flex flex-row py-1 items-center gap-1 hover:bg-green-700" id="ecommerce">
+                        Live Link
+                    </button>
+                </div>
+            </div>
+            <!--card 3: Rapido-->
+            <div class="bg-[white] shadow-2xl space-y-2 py-4 px-4 rounded-2xl">
+                <img src="{% static '/assets/rapido.png' %}" alt="Nill"  class="object-cover w-full h-40 border border-gray-300 rounded-md">
+                <p class="font-[Satoshi Regular] text-[18px] leading-[28px] text-black font-normal">Rapido Website - Static Landing Page Cloning</p>
+                <div class="flex flex-row justify-between">
+                    <button class="bg-green-600 rounded-lg text-[white] px-2 flex flex-row py-1 items-center gap-1 hover:bg-green-700" id="rapido">
+                        Live Link
+                    </button>
+                </div>
+            </div> 
+            <!--card 4: pastry shop website-->
+            <div class="bg-[white] shadow-2xl space-y-2 py-4 px-4 rounded-2xl">
+                <img src="{% static '/assets/pastry.png' %}" alt="Nill"  class="object-cover w-full h-40 border border-gray-300 rounded-md">
+                <p class="font-[Satoshi Regular] text-[18px] leading-[28px] text-black font-normal">Pastry Shop Website - Responsive website </p>
+                <div class="flex flex-row justify-between">
+                    <button class="bg-green-600 rounded-lg text-[white] px-2 flex flex-row py-1 items-center gap-1 hover:bg-green-700" id="pastry">
+                        Live Link
+                    </button>
+                </div>
+            </div>
+            <!--card 5: Finance Dashboard-->
+            <div class="bg-[white] shadow-2xl space-y-2 py-4 px-4 rounded-2xl">
+                <img src="{% static '/assets/finance.png' %}" alt="Nill"  class="object-cover w-full h-40 border border-gray-300 rounded-md">
+                <p class="font-[Satoshi Regular] text-[18px] leading-[28px] text-black font-normal">Finance Dashboard - Responsive website (Django)</p>
+                <div class="flex flex-row justify-between">
+                    <button class="bg-green-600 rounded-lg text-[white] px-2 flex flex-row py-1 items-center gap-1 hover:bg-green-700" id="finance">
+                        Live Link
+                    </button>
+                </div>
+            </div> 
+        </div>
+        <script>
+
+            let Ecommerce = document.getElementById("ecommerce")
+                Ecommerce.addEventListener("click", function () {
+                    window.open("https://mohankumarn-1502.github.io/E-commerce-static/project2/", "_blank");
+            });
+
+            let Rapido = document.getElementById("rapido")
+                Rapido.addEventListener("click", function () {
+                    window.open("https://mohankumarn-1502.github.io/rapido_clone_landing_page/home.html", "_blank");
+            });
+            
+            let Pastry = document.getElementById("pastry")
+                Pastry.addEventListener("click", function () {
+                    window.open("https://pasteryshop1website.vercel.app/", "_blank");
+            });
+            
+            
+            let Finance = document.getElementById("finance")
+                Finance.addEventListener("click", function () {
+                    window.open("", "_blank");
+            }); 
+            
+        </script>
+{% endblock %}
